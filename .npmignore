@@ -1,0 +1,8 @@
+lib
+node_modules
+.eslintrc.js
+.gitigore
+.prettierrc
+index.ts
+tsconfig.build.json
+tsconfig.json
