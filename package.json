@@ -5,13 +5,26 @@
   "dependencies": {
     "nats": "^2.16.0"
   },
+  "peerDependencies": {
+    "reflect-metadata": "^0.1.12",
+    "@nestjs/core": "^10.2.0",
+    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
+    "rxjs": "^7.8.1"
+  },
   "devDependencies": {
+    "@nestjs/cli": "^10.1.17",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.2.0",
+    "@nestjs/schematics": "^10.0.2",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^7.8.1",
+    "ts-loader": "^9.4.4"
   },
   "keywords": [
     "nats",
@@ -37,11 +50,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/wbget/nestjs-nats"
-  },
-  "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
-    "@nestjs/core": "^8.0.0 || ^9.0.0 || ^10.0.0",
-    "reflect-metadata": "^0.1.12"
   },
   "engines": {
     "node": ">= 16"

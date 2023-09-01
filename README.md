@@ -7,9 +7,14 @@ npm install -S @wbget/nestjs-nats
 # use  
 ```
 @Module({
-    imports: [NatsModule.forRoot()],
+    imports: [NatsModule.forRoot({
+      servers:['demo.nats.io:4222']
+    })],
 })
 export class AppMoudle implements OnModuleInit{
+    constructor(
+      private readonly natsLoader: NatsLoader
+    ) {}
     async onModuleInit() {
         await this.natsLoader.loadNats();
     }
