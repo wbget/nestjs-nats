@@ -1,6 +1,6 @@
 {
   "name": "@wbget/nestjs-nats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "nats for nestjs",
   "dependencies": {
     "nats": "^2.16.0"
